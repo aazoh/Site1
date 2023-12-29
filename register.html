@@ -1,0 +1,45 @@
+<!-- register.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <!-- Link to your stylesheet if needed -->
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>Register</h1>
+        <!-- Add your registration form here -->
+        <form action="/api/register" method="POST">
+            <!-- First Name -->
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <!-- Last Name -->
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <!-- Username -->
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <!-- Password -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <!-- Confirm Password -->
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>

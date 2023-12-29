@@ -1,0 +1,161 @@
+body{
+margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: #121212;
+  color: #fff;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #222;
+}
+
+.navbar-menu a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  background: #333;
+  transition: background-color 0.3s;
+}
+
+.navbar-menu a:hover {
+  background-color: #444;
+}
+
+.navbar-account {
+  display: flex;
+  align-items: center;
+}
+
+.account-info {
+  margin-right: 1rem;
+  text-align: right;
+}
+
+.account-name {
+  font-weight: bold;
+}
+
+.login-button {
+  padding: 0.5rem 1rem;
+  border: 2px solid #76b900;
+  border-radius: 20px;
+  background: transparent;
+  color: #76b900;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.login-button:hover {
+  background: #76b900;
+  color: #000;
+}
+
+.hero {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.title {
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.hero-buttons .button {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  background: #76b900;
+  color: #000;
+  text-decoration: none;
+  margin: 0.5rem;
+  transition: background-color 0.3s;
+}
+
+.hero-buttons .button:hover {
+  background-color: #9ece6a;
+}
+a {
+  color: inherit; /* Inherit the color from the parent element */
+  text-decoration: none; /* Remove underline */
+}
+.cookieCard {
+  width: 300px;
+  height: 200px;
+  background: linear-gradient(to right, rgb(137, 104, 255), rgb(175, 152, 255));
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  position: fixed;
+  bottom: 20px; /* Adjust the bottom spacing as needed */
+  right: 20px; /* Adjust the right spacing as needed */
+  overflow: hidden;
+  z-index: 999; /* Ensure it's above other content */
+}
+
+.cookieCard::before {
+  width: 150px;
+  height: 150px;
+  content: "";
+  background: linear-gradient(to right,rgb(142, 110, 255),rgb(208, 195, 255));
+  position: absolute;
+  border-radius: 50%;
+  right: -25%;
+  top: -25%;
+}
+
+.cookieHeading {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: rgb(241, 241, 241);
+  z-index: 2;
+}
+
+.cookieDescription {
+  font-size: 0.9em;
+  color: rgb(241, 241, 241);
+  z-index: 2;
+}
+
+.cookieDescription a {
+  color: rgb(241, 241, 241);
+}
+
+.acceptButton {
+  padding: 11px 20px;
+  background-color: #7b57ff;
+  transition-duration: .2s;
+  border: none;
+  color: rgb(241, 241, 241);
+  cursor: pointer;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.acceptButton:hover {
+  background-color: #714aff;
+  transition-duration: .2s;
+}

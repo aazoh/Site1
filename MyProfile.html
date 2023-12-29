@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="MyProfile.css">
+</head>
+<body>
+
+<div class="container">
+    <header class="navbar">
+        <h3 id="TopHeader"><a href="index.html">Tokens</a></h3>
+        <div class="navbar-menu">
+            <a href="Tokens.html">Tokens</a>
+            <a href="tournaments.html">Tournaments</a>
+            <a href="scrims.html">Scrims</a>
+        </div>
+        <div class="navbar-account">
+            <div class="account-info">
+                <span class="account-name">Surge_Naman</span>
+            </div>
+            <a href="#" class="login-button">Logout</a>
+        </div>
+    </header>
+
+    <div class="hero">
+        <h2>My Profile</h2>
+
+        <div class="account-actions">
+            <h3>Account Actions</h3>
+        </div>
+
+        <form action="#" method="post" id="Form-Border">
+            <label for="avatar">Avatar:</label>
+            <input type="file" id="avatar" name="avatar" accept="image/*">
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter username">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter password">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter email">
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter phone number">
+
+            <button type="submit" class="login-button" onclick="saveChanges()">Save Changes</button>
+        </form>
+
+        <div class="account-buttons">
+            <button class="login-button" onclick="deleteAccount()">Delete My Account</button>
+            <button class="login-button" onclick="addPaymentMethod()">Add Payment Method</button>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

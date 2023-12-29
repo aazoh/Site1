@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="container">
+        <header class="navbar">
+            <h3 id="TopHeader"><a href="index.html">Tokens</a></h3>
+            <div class="navbar-menu">
+                <a href="Tokens.html">Tokens</a>
+                <a href="tournaments.html">Tournaments</a>
+                <a href="scrims.html">Scrims</a>
+            </div>
+            <div class="navbar-account">
+                <div class="account-info">
+                    <span class="account-name">Surge_Naman</span>
+                    <span class="account-balance">$0.00</span>
+                    <span class="account-xp">19 XP</span>
+                </div>
+                <a href="login.html" class="login-button">Login</a>
+            </div>
+        </header>
+
+        <main class="hero">
+            <div class="login-container">
+                <h2>Login</h2>
+                <form id="loginForm" class="login-box">
+                    <div class="input-box">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+
+                    <button type="submit">Login</button>
+                </form>
+                <!-- Register Button -->
+                <a href="register.html" class="btn-12" id="RegisterButton">Register</a>
+                <script src="login.js"></script>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
